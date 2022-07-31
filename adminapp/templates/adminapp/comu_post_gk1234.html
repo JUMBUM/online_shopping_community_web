@@ -1,0 +1,104 @@
+{%load static%} 
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>comu_post_jd.html 페이지 입니다.</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+</head>
+<body>
+    {% include 'adminapp/include/nav_bootstrap_admin.html' %}
+
+    <div class="jumbotron">
+        <h1 class="display-4"></h1>
+        <p class="lead">
+          <table border="1">
+            <tr style="background: lightgreen">
+                <th>게시글 종류</th>
+                <th>제목</th>
+                <th>내용</th>
+                <th>아이디</th>
+                <th>주거형태</th>
+                <th>평수</th>
+                <th>예산</th>
+                <th>가족형태</th>
+                <th>스타일</th>
+                <th>컬러</th>
+                <th>세부공사</th>
+                <th>분야</th>
+            </tr>
+            <tr>
+                <td>{{df16.post_gu}}</td>
+                <td>{{df16.post_name }}</td>
+                <td>{{df16.post_contents2 }}</td>
+                <td>{{df16.post_id }}</td>
+                <td>{{df16.post_type }}</td>
+                <td>{{df16.post_size }}</td>
+                <td>{{df16.post_budget }}</td>
+                <td>{{df16.post_family }}</td>
+                <td>{{df16.post_style }}</td>
+                <td>{{df16.post_color }}</td>
+                <td>{{df16.post_detail }}</td>
+                <td>{{df16.post_field }}</td>
+            </tr>
+          </table>
+        </p>
+        <hr class="my-4">
+        <p></p>
+        <a class="btn btn-primary btn-lg" href="#" role="button"></a>
+      </div>
+
+
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="댓글입력" aria-label="Recipient's username" aria-describedby="button-addon2">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="button" id="button-addon2">등록</button>
+        </div>
+      </div>
+
+      
+
+
+      <ul class="list-unstyled">
+        <li class="media">
+          <img src="..." class="mr-3" alt="...">
+          <div class="media-body">
+            <h5 class="mt-0 mb-1"></h5>
+            <p>  <table border="1">
+              <tr style="background: lightgreen">
+                  <th>이름(판매자)</th>
+                  <th>이름(구매자)</th>
+                  <th>댓글 내용</th>
+              </tr>
+              <tr>
+                  <td>{{df18.mem_name}}</td>
+                  <td>{{df18.sel_name}}</td>
+                  <td>{{df18.com_contents}}</td>
+              </tr>
+            </table></p>
+          </div>
+        </li>
+
+      </ul>
+
+      <nav aria-label="Page navigation example">
+        <ul class="pagination">
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+</body>
+</html>

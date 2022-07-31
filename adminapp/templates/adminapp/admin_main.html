@@ -1,0 +1,142 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>House Main</title>
+        <link href="houseapp/static/bootstrap4/css" rel ='stylesheet' type = "text/css">
+    </head>
+    <body>
+        {% include 'adminapp/include/nav_bootstrap_admin.html' %}
+        <div class = "container">
+            
+            <hr/>
+            <h2><strong>대표 게시글</strong></h2>
+            <a href="/house/mainwriting">
+                <img src="{% static 'houseapp/images/white.jpg' %}" alt="대표게시글" width="475" height="400">
+            </a>
+            {{df | safe}}
+            <hr/>
+            <h2><strong>쇼핑하기/직배송/이벤트/오늘의 트렌드</strong></h2>
+            <div style="width: 100px; height:100; float: left; margin-right:40px;">
+                <a href="">
+                    <img alt="쇼핑하기" src="{% static 'houseapp/images/cart.png' %}" width="50" height="50"/>
+                </a>
+            </div>
+            <div style="width: 100px; height:100; float: left; margin-right:40px;">
+                <a href="">
+                    <img alt="직배송" src="{% static 'houseapp/images/delivery.png' %}" width="50" height="50"/>
+                </a>
+            </div>
+            <div style="width: 100px; height:100; float: left; margin-right:40px;">
+                <a href="">
+                    <img alt="이벤트" src="{% static 'houseapp/images/event.png' %}" width="50" height="50"/>
+                </a>
+            </div>
+            <div style="width: 100px; height:100; float: left; margin-right:40px;">
+                <a href="">
+                    <img alt="핫트랜드" src="{% static 'houseapp/images/trend.png' %}" width="50" height="50"/>
+                </a>
+            </div>
+            <div style="clear:both"></div>
+            <hr/>
+            <h2><strong>오늘의 스토리</strong></h2>
+
+            <div style="width: 200px; height:100; float: left; margin-right:1px;">
+                <a href="">
+                    <img alt="오늘의스토리1" src="{% static 'houseapp/images/today3.jpg' %}" width="175" height="140"/>
+                </a>
+            </div>
+            <div style="width: 200px; height:100; float: left; margin-right:1px;">
+                <a href="">
+                    <img alt="오늘의스토리2" src="{% static 'houseapp/images/today1.jpg' %}"  width="175" height="140"/>
+                </a>
+            </div>
+            <div style="width: 200px; height:100; float: left; margin-right:1px;">
+                <a href="">
+                    <img alt="오늘의스토리3" src="{% static 'houseapp/images/today4.jpg' %}" width="175" height="140"/>
+                </a>
+            </div>
+            <div style="clear:both"></div>
+            {{td | safe}}
+            <hr/>
+            <h2><strong>카테고리</strong></h2>
+            <div style="width: 50; height:50; float: left; margin-right:35px;">
+                <a href="/house/category_gg/">
+                    <img alt="가구" src="{% static 'houseapp/images/furniture.png' %}" width="50" height="50"/>
+                </a>
+            </div>
+            <div style="width: 50; height:50; float: left; margin-right:35px;">
+                <a href="/house/category_gj/">
+                    <img alt="가전" src="{% static 'houseapp/images/electronicappliance.png' %}"  width="50" height="50"/>
+                </a>
+            </div>
+            <div style="width: 50; height:50; float: left; margin-right:35px;">
+                <a href="/house/category_dc/">
+                    <img alt="데코식물" src="{% static 'houseapp/images/decoration.png' %}" width="50" height="50"/>
+                </a>
+            </div>
+            <div style="width: 50; height:50; float: left; margin-right:35px;">
+                <a href="/house/category_sa/">
+                    <img alt="생필품" src="{% static 'houseapp/images/daily.png' %}" width="50" height="50"/>
+                </a>
+            </div>
+            <div style="width: 50; height:50; float: left; margin-right:35px;">
+                <a href="/house/category_sn/">
+                    <img alt="수납정리" src="{% static 'houseapp/images/drawer.png' %}" width="50" height="50"/>
+                </a>
+            </div>
+            <div style="width: 50; height:50; float: left; margin-right:35px;">
+                <a href="/house/category_jm/">
+                    <img alt="조명" src="{% static 'houseapp/images/lighting.png' %}" width="50" height="50"/>
+                </a>
+            </div>
+            <div style="width: 50; height:50; float: left; margin-right:35px;">
+                <a href="/house/category_jb/">
+                    <img alt="주방용품" src="{% static 'houseapp/images/kitchen.png' %}" width="50" height="50"/>
+                </a>
+            </div>
+            <div style="width: 50; height:50; float: left; margin-right:35px;">
+                <a href="/house/category_fb/">
+                    <img alt="패브릭" src="{% static 'houseapp/images/fabric.png' %}" width="50" height="50"/>
+                </a>
+            </div>
+            <div style="clear:both"></div>
+
+            <hr/>
+            <h2><strong>오늘의 딜</strong></h2>
+            {{dl | safe}}
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <img src="{% static 'houseapp/images/today1.jpg' %}" class="d-block w-100" alt="1">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="{% static 'houseapp/images/today2.jpg' %}" class="d-block w-100" alt="2">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="{% static 'houseapp/images/today3.jpg' %}" class="d-block w-100" alt="3">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+            <hr/>
+            <h5>회사소개</h5>
+            <hr/>
+        </div>
+
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>    
+        <script src="https://getbootstrap.kr/docs/5.0/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+        crossorigin="anonymous"></script>
+    </body>
+</html>
