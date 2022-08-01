@@ -1,0 +1,9 @@
+nav{
+    background-color: rgb(245, 196, 123);
+    font-size: 120%; 
+    text-align: center
+}
+
+nav a {
+    color: rgba(51, 110, 0, 0.772)
+} 
